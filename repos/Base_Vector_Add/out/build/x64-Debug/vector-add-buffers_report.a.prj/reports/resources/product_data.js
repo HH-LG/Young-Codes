@@ -1,0 +1,1 @@
+var infoJSON={"compileInfo":{"nodes":[{"family":"Agilex, AGFB014R24A3E3VR0","id":1,"name":"vector-add-buffers_report","product":"SYCL","quartus":"","time":"Thu Jun 22 15:22:17 2023","version":"2023.1.0 Build 232097a6b03b7c02055623c6eb99ac83ec7cd8a2"}]}};

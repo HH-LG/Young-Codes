@@ -1,0 +1,5 @@
+Compiler Command: aoc -o C:\Users\24746\AppData\Local\Temp\vector-add-buffers-4472a5-456259.aocr C:\Users\24746\AppData\Local\Temp\icx-cl-eb3181\vector-add-buffers-f11020-36c569.spv -sycl -rtl -dep-files=C:\Users\24746\AppData\Local\Temp\icx-cl-eb3181\vector-add-buffers.cpp-15620d.d -output-report-folder=vector-add-buffers_report.a.prj -g -hardware -target=Agilex
+Compiler Warning: Kernel dispatch logic resource estimates for device family "agilex" may be inaccurate.
+Compiler Warning: FIFO resource estimates for device family "agilex" may be inaccurate.
+System name: vector_add_buffers_report_a
+

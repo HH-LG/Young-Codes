@@ -1,0 +1,275 @@
+{
+  "nodes":
+  [
+    {
+      "name":"0"
+      , "id":41
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Interleaving":"No"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"0.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel 0 Width (bits)":"64"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"0"
+          , "id":43
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"64"
+              , "Address Width":"35"
+              , "Latency":"1"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"1"
+              , "Wait Request":"0"
+              , "Start Address":"0x0"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":42
+      , "parent":"41"
+      , "bw":"0.00"
+      , "num_channels":"1"
+      , "interleave":"0"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"0.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":44
+      , "parent":"41"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":45
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":48
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"0"
+              , "Interconnect Style":"tree"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect"
+          , "id":46
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"0"
+              , "Interconnect Style":"tree"
+              , "Reads":"2"
+            }
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Read Interconnect Router"
+          , "id":47
+          , "details":
+          [
+            {
+              "type":"table"
+              , "User specified num-reorder flag":"Unset"
+            }
+          ]
+          , "type":"memsys"
+          , "children":
+          [
+            {
+              "name":"Bus 0"
+              , "id":54
+              , "type":"memsys"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Loads"
+      , "id":49
+      , "parent":"41"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"LD"
+          , "id":50
+          , "kwidth":"32"
+          , "mwidth":"64"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"33"
+              , "Latency":"31 cycles"
+              , "Width":"32 bits"
+              , "0 Width":"64 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"PIPELINED"
+              , "Kernel":"'lambda'(auto)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"C:\\Users\\24746\\source\\repos\\Base_Vector_Add/src\\vector-add-buffers.cpp"
+                , "line":87
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":51
+          , "kwidth":"32"
+          , "mwidth":"64"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"33"
+              , "Latency":"31 cycles"
+              , "Width":"32 bits"
+              , "0 Width":"64 bits"
+              , "Uses Caching":"No"
+              , "LSU Style":"PIPELINED"
+              , "Kernel":"'lambda'(auto)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"C:\\Users\\24746\\source\\repos\\Base_Vector_Add/src\\vector-add-buffers.cpp"
+                , "line":87
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":52
+      , "parent":"41"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":53
+          , "kwidth":"32"
+          , "mwidth":"64"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"95"
+              , "Latency":"31 cycles"
+              , "Width":"32 bits"
+              , "0 Width":"64 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"PIPELINED"
+              , "Kernel":"'lambda'(auto)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"C:\\Users\\24746\\source\\repos\\Base_Vector_Add/src\\vector-add-buffers.cpp"
+                , "line":87
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":43
+      , "to":42
+    }
+    , {
+      "from":42
+      , "to":43
+    }
+    , {
+      "from":46
+      , "to":45
+    }
+    , {
+      "from":48
+      , "to":45
+    }
+    , {
+      "from":45
+      , "to":42
+    }
+    , {
+      "from":50
+      , "to":46
+    }
+    , {
+      "from":51
+      , "to":46
+    }
+    , {
+      "from":53
+      , "to":48
+    }
+    , {
+      "from":42
+      , "to":54
+    }
+    , {
+      "from":54
+      , "to":50
+      , "reverse":1
+    }
+    , {
+      "from":54
+      , "to":51
+      , "reverse":1
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+<KERNEL_LIST>
+	<PROGRAM_GLOBAL_MEM_SIZE value="0" />
+	<ENABLE_HYPER_OPTIMIZATIONS value="1" />
+	<USE_SYNC_RESET value="1" />
+	<TOP_LEVEL_RESET_EXTENDER value="0" />
+	<ENABLE_STALL_LATENCY value="1" />
+	<ENABLE_ECC value="0" />
+	<GLOBAL_WRITE_LSU_IC_DATA_LATENESS value="0" />
+	<GLOBAL_READ_LSU_IC_DATA_LATENESS value="0" />
+	<GLOBAL_LSU_IC_WIDE_DATA_SLICING value="0" />
+	<ALLOW_HIGH_SPEED_FIFO_USAGE value="0" />
+	<KERNEL_BUNDLE name="_ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6vectorIiSaIiEES7_RS5_ENKUlRNS0_7handlerEE_clESA_EUlT_E_" kname="ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6vectorIiSaIiEES7_RS5_ENKUlRNS0_7handlerEE_clESA_EUlT_E" compute_units="1">
+	<KERNEL name="_ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6vectorIiSaIiEES7_RS5_ENKUlRNS0_7handlerEE_clESA_EUlT_E_" kname="ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6vectorIiSaIiEES7_RS5_ENKUlRNS0_7handlerEE_clESA_EUlT_E" filename="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000lr.sv" entity_name="ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000lr" version="1" cosim_name="" report_name="\27lambda\27\28auto\29" enable_global_profiling="1" is_streaming="false" pipelined="false" workgroup_invariant="1" workitem_invariant="0" has_global_atomics="0" num_vector_lanes="1" num_profiling_signals="0">
+		<RESOURCE_INFO>
+			<ID value="0" />
+			<AGGREGATE_STATIC_LOCAL_MEM_SIZE value="0" />
+			<MAX_WORK_GROUP_SIZE num="1" values="2147483647" />
+			<REQUIRED_WORK_GROUP_SIZE x="0" y="0" z="0" />
+			<FAST_RELAUNCH_DEPTH value="1" />
+			<USES_GLOBAL_WORK_OFFSET value="1" />
+		</RESOURCE_INFO>
+		<CONFIGURATION>
+			<INTERFACE port="clock_reset" type="clock"/>
+			<INTERFACE port="cra_irq" type="irq"/>
+			<INTERFACE port="cra" type="agent" cosim_name="ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000000t" read="1" write="1" width="64" is_volatile="0" size="256" latency="0" />
+		</CONFIGURATION>
+		<REQUIREMENTS>
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/windows64/lib/dspba/Libraries/sv/base/dspba_library_ver.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_ecc_pkg.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_data_fifo.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_fifo.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_altera_syncram_wrapped.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_scfifo_wrapped.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_ecc_decoder.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_ecc_encoder.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_ll_fifo.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_ll_ram_fifo.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_valid_fifo_counter.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_dspba_valid_fifo_counter.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_staging_reg.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_fifo.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_mid_speed_fifo.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_latency_one_ram_fifo.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_latency_zero_ram_fifo.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_fifo_zero_width.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_high_speed_fifo.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_low_latency_fifo.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_zero_latency_fifo.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_fanout_pipeline.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_std_synchronizer_nocut.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_tessellated_incr_decr_threshold.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_tessellated_incr_lookahead.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_reset_handler.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_lfsr.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_mlab_fifo.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_parameter_assert.svh" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_dspba_buffer.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_full_detector.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_tessellated_incr_decr_decr.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_top.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_permute_address.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_pipelined.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_enabled.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_basic_coalescer.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_simple.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_streaming.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_burst_host.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_bursting_load_stores.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_non_aligned_write.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_read_cache.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_atomic.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_prefetch_block.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_wide_wrapper.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_streaming_prefetch.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_aligned_burst_coalesced_lsu.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_toggle_detect.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_debug_mem.v" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_burst_coalesced_pipelined_write.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/lsu_burst_coalesced_pipelined_read.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_fifo_stall_valid_lookahead.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_global_load_store.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_lsu.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_lsu_burst_coalescer.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_lsu_coalescer_dynamic_timeout.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_lsu_data_aligner.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_lsu_read_cache.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_lsu_read_data_alignment.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_lsu_unaligned_controller.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_lsu_word_coalescer.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_lsu_write_data_alignment.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_lsu_write_kernel_downstream.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_shift_register_no_reset.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/acl_sync.sv" />
+			<FILE name="$::env(INTELFPGAOCLSDKROOT)/ip/hld_sim_latency_tracker.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000lr.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000001n.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v0000000.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000000h.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000000e.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000001e.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000002e.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000000n.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000000r.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000001r.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000002r.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000003r.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000004r.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000005r.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000000o.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000006r.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000007r.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000008r.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000009r.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000ar.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000br.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000001o.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000cr.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000dr.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000er.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000fr.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000gr.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000hr.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000ir.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000jr.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000002o.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v00000kr.sv" />
+			<FILE name="kernel_hdl/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6ve000000E_clESA_EUlT_E/ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6v000000t.sv" />
+		</REQUIREMENTS>
+		<DATA>
+			<INTERFACE port="unnamed_ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6vectorIiSaIiEES7_RS5_ENKUlRNS0_7handlerEE_clESA_EUlT_E1_ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6vectorIiSaIiEES7_RS5_ENKUlRNS0_7handlerEE_clESA_EUlT_E" cosim_name="" type="host" width="64" true_lsu_width="32" burstwidth="1" pipelined="true" addr_space="__global" aspace_id="0" optype="read" criticality="8" buffer_location="0" group_id="0" connected_to_agent="0" />
+			<INTERFACE port="unnamed_ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6vectorIiSaIiEES7_RS5_ENKUlRNS0_7handlerEE_clESA_EUlT_E2_ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6vectorIiSaIiEES7_RS5_ENKUlRNS0_7handlerEE_clESA_EUlT_E" cosim_name="" type="host" width="64" true_lsu_width="32" burstwidth="1" pipelined="true" addr_space="__global" aspace_id="0" optype="read" criticality="8" buffer_location="0" group_id="0" connected_to_agent="0" />
+			<INTERFACE port="unnamed_ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6vectorIiSaIiEES7_RS5_ENKUlRNS0_7handlerEE_clESA_EUlT_E3_ZTSZZ9VectorAddRN4sycl3_V15queueERKSt6vectorIiSaIiEES7_RS5_ENKUlRNS0_7handlerEE_clESA_EUlT_E" cosim_name="" type="host" width="64" true_lsu_width="32" burstwidth="1" pipelined="true" addr_space="__global" aspace_id="0" optype="write" criticality="8" buffer_location="0" group_id="0" connected_to_agent="0" />
+		</DATA>
+		<KERNEL_ARGS>
+			<ARGUMENT name="arg_sum" cosim_name="" opencl_access_type="ACL_ARG_ADDR_GLOBAL" opencl_type_category="ACL_ARG_MEM_OBJ" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="4" type_qualifier="" access_qualifier="none" type_name="int*" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_sum1" cosim_name="" opencl_access_type="ACL_ARG_ADDR_NONE" opencl_type_category="ACL_ARG_BY_VALUE" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="1" type_qualifier="" access_qualifier="none" type_name="class.sycl::_V1::range" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_sum2" cosim_name="" opencl_access_type="ACL_ARG_ADDR_NONE" opencl_type_category="ACL_ARG_BY_VALUE" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="1" type_qualifier="" access_qualifier="none" type_name="class.sycl::_V1::range" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_sum3" cosim_name="" opencl_access_type="ACL_ARG_ADDR_NONE" opencl_type_category="ACL_ARG_BY_VALUE" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="1" type_qualifier="" access_qualifier="none" type_name="class.sycl::_V1::range" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_a" cosim_name="" opencl_access_type="ACL_ARG_ADDR_GLOBAL" opencl_type_category="ACL_ARG_MEM_OBJ" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="4" type_qualifier="" access_qualifier="none" type_name="int*" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_a4" cosim_name="" opencl_access_type="ACL_ARG_ADDR_NONE" opencl_type_category="ACL_ARG_BY_VALUE" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="1" type_qualifier="" access_qualifier="none" type_name="class.sycl::_V1::range" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_a5" cosim_name="" opencl_access_type="ACL_ARG_ADDR_NONE" opencl_type_category="ACL_ARG_BY_VALUE" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="1" type_qualifier="" access_qualifier="none" type_name="class.sycl::_V1::range" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_a6" cosim_name="" opencl_access_type="ACL_ARG_ADDR_NONE" opencl_type_category="ACL_ARG_BY_VALUE" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="1" type_qualifier="" access_qualifier="none" type_name="class.sycl::_V1::range" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_b" cosim_name="" opencl_access_type="ACL_ARG_ADDR_GLOBAL" opencl_type_category="ACL_ARG_MEM_OBJ" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="4" type_qualifier="" access_qualifier="none" type_name="int*" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_b7" cosim_name="" opencl_access_type="ACL_ARG_ADDR_NONE" opencl_type_category="ACL_ARG_BY_VALUE" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="1" type_qualifier="" access_qualifier="none" type_name="class.sycl::_V1::range" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_b8" cosim_name="" opencl_access_type="ACL_ARG_ADDR_NONE" opencl_type_category="ACL_ARG_BY_VALUE" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="1" type_qualifier="" access_qualifier="none" type_name="class.sycl::_V1::range" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+			<ARGUMENT name="arg_b9" cosim_name="" opencl_access_type="ACL_ARG_ADDR_NONE" opencl_type_category="ACL_ARG_BY_VALUE" is_streaming="false" size="8" streaming_width="64" streaming_cra_port="" is_stable="false" alignment="1" type_qualifier="" access_qualifier="none" type_name="class.sycl::_V1::range" host_accessible="" pipe_channel_id="" >
+			</ARGUMENT>
+		</KERNEL_ARGS>
+		<IPS>
+		</IPS>
+		<PRINTF_FORMAT_STRINGS>
+		</PRINTF_FORMAT_STRINGS>
+		<PRINTF_INTERFACES>
+		</PRINTF_INTERFACES>
+	</KERNEL>
+	</KERNEL_BUNDLE>
+	<GLOBAL_MEM_LATENCY kernel_side_mem_latency="8" arbitration_latency="5" />
+	<STRUCT_TYPE_DEFS>
+	</STRUCT_TYPE_DEFS>
+	<KERNEL_INTERCONNECT>
+		<USM_INTERCONNECT value="0" />
+		<GLOBAL_ATOMICS value="0" />
+		<GLOBAL_INTERCONNECT gmem_id="0" name="0" type="0" />
+		<GLOBAL_READS memory="0" aspace="1024" />
+		<GLOBAL_READS memory="0" aspace="1024" />
+		<GLOBAL_WRITES memory="0" aspace="1024" />
+	</KERNEL_INTERCONNECT>
+</KERNEL_LIST>
